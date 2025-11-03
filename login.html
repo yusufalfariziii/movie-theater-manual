@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Movie Theater</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <img src="bahan.jpg" class="bg-img" alt="Cinema">
+            <div class="overlay"></div>
+            <div class="content">
+                <h2>Login</h2>
+                <p>Let's get started</p>
+
+                <form onsubmit="return loginUser(event)">
+                    <script>
+                        function loginUser(event) {
+                            event.preventDefault(); // Biar form tidak reload halaman
+
+                            const email = document.querySelector('input[type="email"]').value;
+                            const password = document.querySelector('input[type="password"]').value;
+
+                            // Data dummy contoh
+                            const user = {
+                                email: "yusuf@gmail.com",
+                                password: "123456"
+                            };
+
+                            if (email === user.email && password === user.password) {
+                                alert("Login successful!");
+                                window.location.href = "theater.html"; // pindah ke halaman theater
+                            } else {
+                                alert("Invalid email or password!");
+                            }
+
+                            return false;
+                        }
+                    </script>
+
+                    <div class="input-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <a href="#" class="forgot">Forgot Password?</a>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+
+                <div class="divider">Or</div>
+                <button class="google-btn">Login with Google</button>
+                <button class="facebook-btn">Login with Facebook</button>
+
+                <p class="footer">Don't have an account? <a href="signup.html">Register here</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

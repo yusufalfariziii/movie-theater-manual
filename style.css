@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+
+/* ===== LOGIN & SIGNUP ===== */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-box {
+    position: relative;
+    width: 350px;
+    padding: 30px;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.bg-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.overlay {
+    position: absolute;
+    background: linear-gradient(to top, #000, rgba(0, 0, 0, 0.4));
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.content h2 {
+    margin-bottom: 5px;
+}
+
+.input-group {
+    margin: 10px 0;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #223A6B;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #304d8a;
+}
+
+.google-btn,
+.facebook-btn {
+    width: 100%;
+    margin-top: 8px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.google-btn {
+    background-color: white;
+    color: #333;
+}
+
+.facebook-btn {
+    background-color: #3b5998;
+    color: white;
+}
+
+.forgot,
+.footer a {
+    color: #00b4d8;
+    text-decoration: none;
+}
+
+.footer {
+    margin-top: 15px;
+}
+
+
+/* ===== THEATER PAGE ===== */
+
+.theater-container {
+    padding: 20px;
+}
+
+.theater-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #223A6B;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.location {
+    margin: 15px 0;
+    font-size: 18px;
+    color: #ffc107;
+}
+
+.theater-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.theater-item {
+    background-color: #222;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.theater-item:hover {
+    background-color: #333;
+}
